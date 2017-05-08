@@ -96,6 +96,7 @@ public class MMKAllocCalculator extends AllocCalculator {
                             externalTupleArrivalRate, externalRateByInterArrival, externalTupleInterArrivalScv);
                 }));
 
+        ///TODO: in future extension, shall consider multiple spouts cases
         GeneralSourceNode spInfo = spInfos.entrySet().stream().findFirst().get().getValue();
 
         Map<String, GeneralServiceNode> queueingNetwork = boltHistoricalData.compHistoryResults.entrySet().stream()
