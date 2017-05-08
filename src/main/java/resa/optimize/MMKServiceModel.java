@@ -23,8 +23,8 @@ public class MMKServiceModel {
     private static final Logger LOG = LoggerFactory.getLogger(MMKServiceModel.class);
 
     public enum ServiceModelType {
-        MMK(0), GGK_SimpleAppr(1), GGK_ComplexAppr(2);
-        private static final int totalTypeCount = 3;
+        MMK(0), GGK(1);
+        private static final int totalTypeCount = 2;
         private final int value;
 
         ServiceModelType(int value) {
